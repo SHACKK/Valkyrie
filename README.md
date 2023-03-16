@@ -2,33 +2,25 @@
 <img src="./Malware-Arrestium.png", height="100px", weight="100px">
 </p>
   
-# Project, "{ Valkyrie }"
-full-automation tool for downloading benign malware sample at Malware-Arrestium
-
-## Requirements
+## Intruduce
 ```
-(to build) Odin Library project, with APIEntry.
-VS2019 with Desktop/MFC
-```
-
-## Usage
-```
-1. Download repository from this.
-2. Unzip 'Client-Valkyrie'.
-3. Move to  './Client-Valkyrie/Build/'
-4. execute program as optional mode,
-    - click just 'Valkyrie.exe' file only.
-   manual download from setting file,
-    - click '{}.some_ext' file
+1. 서버에서 악성코드 샘플을 다운로드 하는 툴 입니다.
+2. 서버는 FTP 서비스를 활성화 하였다고 가정합니다.
+3. 기능1 : 날짜 범위 다운로드
+4. 기능2 : 샘플 이름 검색 다운로드
 ```
 
-## Directory-Tree
+## dependency
 ```
+VS2019
+Windows10 SDK
+MFC
+cppcore : https://github.com/profrog-jeon/cppcore
 ```
 
-## Update Log
+## Used Skill
 ```
-2022.06.13
-  - Create repository
-  - Modify markdown file
+1. C++
+2. WINAPI
+3. MFC
 ```
