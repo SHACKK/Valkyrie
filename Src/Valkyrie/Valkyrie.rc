@@ -1,0 +1,535 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\Valkyrie.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.KOR\\afxribbon.rc""   // MFC 리본 및 컨트롤 막대 리소스\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Malware_Arrestium.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOWNLOAD_PROGRESS_DLG DIALOGEX 0, 0, 376, 192
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Valkyrie | 원터치 다운로더"
+FONT 8, "Galmuri9", 500, 0, 0xFE
+BEGIN
+    LISTBOX         IDC_E1_DOWNLIST,12,19,351,102,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Download Status",IDC_E1_ST,7,7,65,8
+    CONTROL         "",IDC_E1_PROCCESS,"msctls_progress32",WS_BORDER,11,129,350,19
+    PUSHBUTTON      "Open Zip File",IDC_E1_OPENZIP_BTN,289,153,80,32
+END
+
+IDD_MENUAL_DLG DIALOGEX 0, 0, 429, 209
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valkyrie | 사용자 정의 모드"
+MENU IDR_VALKYRIE_MENU
+FONT 8, "Galmuri9", 500, 0, 0xFE
+BEGIN
+    EDITTEXT        IDC_D2_SDW_ED,234,36,118,12,ES_AUTOHSCROLL
+    GROUPBOX        "단일 샘플 파일 다운로더",IDC_STATIC,220,7,196,191
+    GROUPBOX        "서버 연결 정보",IDC_STATIC,11,90,197,107
+    GROUPBOX        "프로그램 설정 정보 뷰어",IDC_STATIC,11,6,196,62
+    LTEXT           "악성코드 수집 서버 PORT",IDC_STATIC,22,119,87,8
+    LTEXT           "수집 서버 접속 계정",IDC_STATIC,22,129,88,8
+    LTEXT           "악성코드 수집 서버 IP",IDC_STATIC,22,108,87,8
+    LTEXT           "파일 다운로드 경로",IDC_STATIC,23,47,80,8
+    EDITTEXT        IDC_D2_ED1,136,107,61,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_D2_ED2,136,129,61,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_D2_ED3,136,118,61,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_D2_ED4,141,24,57,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_D2_ED5,125,46,73,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    LTEXT           "Hash 입력",IDC_STATIC,230,23,38,8
+    PUSHBUTTON      "다운로드",IDC_D2_SDW_DWBTN,316,166,86,25
+    LISTBOX         IDC_D2_SDW_LIST,233,75,168,76,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "삭제",IDC_D2_DEL_BTN,234,155,25,15,BS_BITMAP
+    PUSHBUTTON      "전부삭제",IDC_D2_INIT_BTN,261,155,39,15,BS_ICON
+    DEFPUSHBUTTON   "추가",IDC_D2_SDW_BTN1,360,36,44,15
+    LTEXT           "다운로드할 샘플 리스트",IDC_STATIC,231,61,85,8
+    LTEXT           "현재 ",IDC_STATIC,23,158,18,8
+    LTEXT           "에서 수집 서버로 접속 중입니다. ",IDC_STATIC,82,158,104,8
+    EDITTEXT        IDC_EDIT1,42,158,33,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "서버 PING 테스트",IDC_PING_BTN,140,172,58,18
+    LTEXT           "관심 대상 샘플 확장자",IDC_STATIC,23,25,82,8
+    EDITTEXT        IDC_D2_ED6,125,35,73,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_RIGHT
+    LTEXT           "파일 암호 설정 여부",IDC_STATIC,23,36,58,8
+END
+
+IDD_SETUP_DLG DIALOGEX 0, 0, 236, 232
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "Valkyrie | 초기설정 마법사"
+FONT 8, "Galmuri9", 500, 0, 0xFE
+BEGIN
+    EDITTEXT        IDC_ED_SIP,127,24,80,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_ED_SPORT,127,39,80,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_ED_UID,127,64,80,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_ED_UPW,127,79,80,12,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_ED_ZIPPW,127,129,81,12,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "...",IDC_BTN_DWPATH,190,171,20,15
+    DEFPUSHBUTTON   "초기 설정 마침",IDOK,10,199,219,19
+    GROUPBOX        "서버 연결 정보 설정",IDC_STATIC,9,7,216,95
+    LTEXT           "* 샘플 서버 접속 주소",IDC_STATIC,22,26,79,8
+    LTEXT           "* 샘플 서버 접속 포트",IDC_STATIC,22,41,81,8
+    LTEXT           "* 사용자 ID",IDC_STATIC,22,66,51,8
+    LTEXT           "* 사용자 Password",IDC_STATIC,22,81,75,8
+    GROUPBOX        "관심 샘플 정보 설정",IDC_STATIC,9,109,217,84
+    LTEXT           "다운로드 경로 지정",IDC_STATIC,22,174,68,8
+    LTEXT           "다운로드 파일 암호 지정",IDC_STATIC,22,131,87,8
+    EDITTEXT        IDC_ED_DWPATH,98,171,89,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "- 모든 샘플은 암호화 되어 저장됩니다.",IDC_STATIC,22,145,137,10
+END
+
+IDD_ABOUTDLG DIALOGEX 0, 0, 213, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valkyrie | 프로그램 정보"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_ABOUTBOX_LOGO,23,37,20,20
+    LTEXT           "Valkyrie V1.0.2.10",IDC_ST_ABOUT_NAME,67,11,60,8
+    LTEXT           "악성코드 샘플 다운로드 자동화 도구",IDC_ST_ABOUT_DESCRIPTION,71,24,135,8
+    GROUPBOX        "Valkyrie 버전 정보",IDC_ST_ABOUT_GRBOX,65,50,132,36
+    LTEXT           "제품 버전  :   v2022.8.2.10",IDC_ST_ABOUT_PRODUCT_VER,89,72,95,8
+    LTEXT           "파일 버전  :   v1.0.2.10",IDC_ST_ABOUT_FILE_VER,89,64,94,8
+    LTEXT           "Copyright 2022 All reserved. Akdan",IDC_ST_ABOUT_COPYRIGHT,72,31,134,9
+END
+
+IDD_DATE_TARGET_WND DIALOGEX 0, 0, 434, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "기간",IDC_STATIC,7,11,16,8
+    CONTROL         "",IDC_START_DATETIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,60,8,100,15
+    CONTROL         "",IDC_END_DATETIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,180,8,100,15
+    LTEXT           "~",IDC_STATIC,167,11,8,8
+    LTEXT           "Extension",IDC_STATIC,7,64,32,8
+    PUSHBUTTON      "추 가",IDC_DATE_SAMPLE_ADD_BUTTON,366,7,47,130
+    PUSHBUTTON      "편집",IDC_EXTADD_BTN,7,76,32,11
+    LTEXT           "* 리포트 날짜 기준",IDC_STATIC,287,12,62,8
+END
+
+IDD_NAME_TARGET_WND DIALOGEX 0, 0, 453, 54
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HASHDLG_INPUT,146,20,205,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "추 가",IDC_HASHDLG_ADD_BTN,363,19,50,14
+    LTEXT           "파일 명",IDC_HASHDLG_HASH_STATIC,114,22,29,8
+    CONTROL         "1개월",IDC_1MONTH_RADIO,"Button",BS_AUTORADIOBUTTON,25,17,35,10
+    CONTROL         "3개월",IDC_3MONTH_RADIO,"Button",BS_AUTORADIOBUTTON,66,17,35,10
+    CONTROL         "6개월",IDC_6MONTH_RADIO,"Button",BS_AUTORADIOBUTTON,25,32,35,10
+    CONTROL         "전체",IDC_TOTAL_RADIO,"Button",BS_AUTORADIOBUTTON,66,32,31,10
+    GROUPBOX        "조회 기간",IDC_STATIC,13,4,96,43
+    LTEXT           "* 확장자를 포함해야 합니다.",IDC_STATIC,256,37,129,8
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 499, 414
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valkyrie | 다운로드창"
+MENU IDR_VALKYRIE_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "다운로드",IDOK,414,220,78,164
+    CONTROL         "",IDC_TARGET_LIST,"SysListView32",LVS_REPORT | LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,63,220,347,164
+    PUSHBUTTON      "선택항목 삭제",IDC_REMOVE_SELECTED_BUTTON,319,389,91,18
+    LTEXT           "날짜별 조회 기능",IDC_DATE_WND_STATIC,63,13,429,145,SS_SUNKEN | NOT WS_VISIBLE
+    LTEXT           "파일 이름별 조회기능",IDC_HASH_WND_STATIC,63,163,429,52,SS_SUNKEN | NOT WS_VISIBLE
+    CONTROL         "기간별 조회",IDC_DATE_TYPE_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,13,55,10
+    CONTROL         "파일명 조회",IDC_HASH_TYPE_RADIO,"Button",BS_AUTORADIOBUTTON,7,163,55,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,160,485,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,10,485,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,217,485,1
+    PUSHBUTTON      "전체 삭제",IDC_REMOVE_ALL_BUTTON,224,389,91,18
+    PUSHBUTTON      "필터링",IDC_FILTERING_BUTTON,63,389,67,18
+END
+
+IDD_QUERY_PROGRESS_DLG DIALOGEX 0, 0, 167, 113
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_QUERY_PROGRESS_LIST,7,7,153,98,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+END
+
+IDD_EXTADD_DLG DIALOGEX 0, 0, 146, 75
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "추가",IDOK,40,49,50,14
+    PUSHBUTTON      "취소",IDCANCEL,89,49,50,16
+    GROUPBOX        "확장자 추가",IDC_STATIC,7,7,132,58
+    LTEXT           "SomeFileName . ",IDC_STATIC,18,26,54,8
+    EDITTEXT        IDC_EXTNAME,71,23,51,14,ES_AUTOHSCROLL
+END
+
+IDD_FILTERING_DLG DIALOGEX 0, 0, 641, 284
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,584,263,50,14
+    PUSHBUTTON      "적용",IDC_FILTERING_COMPLETE_BUTTON,535,263,50,14
+    CONTROL         "",IDC_TARGET_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,28,627,229
+    CONTROL         " All/None",IDC_ALL_NONE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,257,52,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,38
+ PRODUCTVERSION 2023,2,23,97
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "Malware Arrest Team"
+            VALUE "FileDescription", "Valkyrie"
+            VALUE "FileVersion", "1.1.0.38"
+            VALUE "InternalName", "Valkyrie.exe"
+            VALUE "LegalCopyright", "(c) Malware Arrest Team.  All rights reserved."
+            VALUE "OriginalFilename", "Valkyrie.exe"
+            VALUE "ProductName", "Valkyrie"
+            VALUE "ProductVersion", "2023.2.23.97"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DOWNLOAD_PROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_MENUAL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        VERTGUIDE, 125
+        VERTGUIDE, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_SETUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 229
+        VERTGUIDE, 22
+        VERTGUIDE, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+        HORZGUIDE, 30
+        HORZGUIDE, 45
+        HORZGUIDE, 70
+        HORZGUIDE, 85
+        HORZGUIDE, 135
+        HORZGUIDE, 178
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DATE_TARGET_WND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 427
+        VERTGUIDE, 39
+        VERTGUIDE, 60
+        VERTGUIDE, 120
+        VERTGUIDE, 180
+        VERTGUIDE, 240
+        VERTGUIDE, 300
+        VERTGUIDE, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+        HORZGUIDE, 15
+        HORZGUIDE, 68
+        HORZGUIDE, 130
+    END
+
+    IDD_NAME_TARGET_WND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        VERTGUIDE, 14
+        VERTGUIDE, 128
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 47
+        HORZGUIDE, 26
+        HORZGUIDE, 32
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        VERTGUIDE, 63
+        VERTGUIDE, 410
+        VERTGUIDE, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 407
+        HORZGUIDE, 13
+        HORZGUIDE, 158
+        HORZGUIDE, 163
+        HORZGUIDE, 215
+        HORZGUIDE, 220
+        HORZGUIDE, 384
+        HORZGUIDE, 389
+    END
+
+    IDD_QUERY_PROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_EXTADD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+        HORZGUIDE, 26
+        HORZGUIDE, 49
+    END
+
+    IDD_FILTERING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 634
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DOWNLOAD_PROGRESS_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MENUAL_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SETUP_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DATE_TARGET_WND AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_NAME_TARGET_WND AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_QUERY_PROGRESS_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EXTADD_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FILTERING_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_VALKYRIE_MENU MENU
+BEGIN
+    POPUP "도구(&T)"
+    BEGIN
+        MENUITEM "설정 편집기(&E)... \tCtrl+E",      MENU_SETUP_EDITOR
+        MENUITEM "초기설정 마법사(&F) \tCtrl+F",       MENU_DEFAULT_SETUP
+        MENUITEM "VKR Viewer(&V)... \tCtrl+V",  MENU_VKR_VIEWER
+        MENUITEM "연결 관리 마법사(&C) \tCtrl+C",      MENU_CONNECT_SETUP
+    END
+    POPUP "보기(V)"
+    BEGIN
+        MENUITEM "도구 모음 숨김",                    ID_32778, CHECKED
+        MENUITEM "상태 표시줄 숨김",                   ID_32783, CHECKED
+    END
+    POPUP "도움말(&I)"
+    BEGIN
+        MENUITEM "Valkyrie Info",               MENU_VALKYRIE_INFO
+        MENUITEM "사용 메뉴얼",                      MENU_HELP_PAGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "Valkyrie 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓을 초기화하지 못했습니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\Valkyrie.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#if !defined(_AFXDLL)
+#include "l.KOR\afxribbon.rc"   // MFC 리본 및 컨트롤 막대 리소스
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
